@@ -1,8 +1,17 @@
 import { clearAuthStorage, getStoredToken } from '@utils/storage';
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, '') ||
-  'http://localhost:5000/api';
+const rawApiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+
+if (
+  typeof rawApiBaseUrl !== 'string' ||
+  rawApiBaseUrl.trim() === ''
+) {
+  throw new Error(
+    'Missing VITE_API_BASE_URL. Set it in .env for local development, or in the Render environment for production builds.'
+  );
+}
+
+const API_BASE_URL = rawApiBaseUrl.trim().replace(/\/$/, '');
 
 export class ApiError extends Error {
   status: number;

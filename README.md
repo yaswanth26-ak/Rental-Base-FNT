@@ -11,8 +11,11 @@ npm install
 Copy `.env.example` to `.env` if needed:
 
 ```
-VITE_API_BASE_URL=http://localhost:5000/api
+VITE_API_BASE_URL=http://localhost:5001/api
+VITE_PROPERTY_ID=1
 ```
+
+For production (e.g. Render Static Site), set `VITE_API_BASE_URL` to your live backend API URL at build time. Do not commit `.env`.
 
 ## Run
 
