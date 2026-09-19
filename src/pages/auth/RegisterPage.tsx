@@ -100,10 +100,10 @@ export function RegisterPage() {
       <div className="relative z-10 w-full max-w-md animate-fade-up">
         <div className="mb-8 text-center">
           <p className="font-display text-4xl font-bold tracking-tight">
-            Rental<span className="text-brand-orange">Base</span>
+            DownTown <span className="text-brand-orange">Stays</span>
           </p>
           <p className="mt-2 text-sm text-gray-400">
-            Create your account to book the house
+            Create your account for DownTown Stays
           </p>
         </div>
 

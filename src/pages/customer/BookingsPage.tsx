@@ -68,7 +68,7 @@ export function BookingsPage() {
               to="/"
               className="rounded-xl bg-brand-orange px-4 py-2.5 text-sm font-semibold text-black"
             >
-              Book the house
+              DownTown Stays
             </Link>
           }
         />
