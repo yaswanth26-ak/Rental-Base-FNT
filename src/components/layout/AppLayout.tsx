@@ -46,10 +46,10 @@ export function AppLayout() {
         <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col border-r border-brand-border bg-brand-charcoal/80 p-5 backdrop-blur lg:flex">
           <div className="mb-8">
             <p className="font-display text-2xl font-bold tracking-tight">
-              Rental<span className="text-brand-orange">Base</span>
+              DownTown <span className="text-brand-orange">Stays</span>
             </p>
             <p className="mt-1 text-xs text-gray-500">
-              {isAdmin ? 'Admin workspace' : 'Book the house'}
+              {isAdmin ? 'Admin workspace' : 'DownTown Stays'}
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export function AppLayout() {
               </button>
               <div>
                 <p className="font-display text-lg font-semibold lg:hidden">
-                  Rental<span className="text-brand-orange">Base</span>
+                  DownTown <span className="text-brand-orange">Stays</span>
                 </p>
                 <p className="hidden text-sm text-gray-400 lg:block">
                   Welcome back,{' '}
@@ -155,7 +155,7 @@ export function AppLayout() {
           <div className="absolute left-0 top-0 flex h-full w-72 flex-col bg-brand-charcoal p-5 shadow-card">
             <div className="mb-6 flex items-center justify-between">
               <p className="font-display text-xl font-bold">
-                Rental<span className="text-brand-orange">Base</span>
+                DownTown <span className="text-brand-orange">Stays</span>
               </p>
               <button
                 type="button"
